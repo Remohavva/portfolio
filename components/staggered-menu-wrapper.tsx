@@ -11,9 +11,9 @@ const menuItems: StaggeredMenuItem[] = [
 ];
 
 const socialItems: StaggeredMenuSocialItem[] = [
-  { label: 'GitHub', link: 'https://github.com/yourusername' },
-  { label: 'LinkedIn', link: 'https://linkedin.com/in/yourusername' },
-  { label: 'Twitter', link: 'https://twitter.com/yourusername' },
+  { label: 'GitHub', link: 'https://github.com/Remohavva' },
+  { label: 'LinkedIn', link: 'https://linkedin.com/in/ramanuj-am' },
+  { label: 'Twitter', link: 'https://twitter.com/GshsRam' },
 ];
 
 export function StaggeredMenuWrapper() {
