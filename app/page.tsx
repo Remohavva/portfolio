@@ -3,7 +3,6 @@ import { SectionTitle } from '@/components/section-title';
 import { ProjectCard } from '@/components/project-card';
 import { getFeaturedProjects } from '@/lib/projects';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
 
 export default function HomePage() {
   const featuredProjects = getFeaturedProjects();
@@ -12,7 +11,7 @@ export default function HomePage() {
     <div>
       <HeroSection />
       
-      <section className="py-16 px-4 bg-black/30">
+      <section className="py-16 px-4 bg-white/40 backdrop-blur-sm">
         <div className="max-w-6xl mx-auto">
           <SectionTitle subtitle="Check out some of my recent work">
             Featured Projects
@@ -23,8 +22,11 @@ export default function HomePage() {
             ))}
           </div>
           <div className="text-center">
-            <Link href="/projects">
-              <Button variant="outline">View All Projects</Button>
+            <Link 
+              href="/projects"
+              className="inline-block px-6 py-3 border-2 border-sky-600 text-sky-700 rounded-lg font-medium hover:bg-sky-50 transition-colors"
+            >
+              View All Projects
             </Link>
           </div>
         </div>
@@ -33,11 +35,14 @@ export default function HomePage() {
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <SectionTitle>Let's Work Together</SectionTitle>
-          <p className="text-lg text-gray-400 mb-8">
+          <p className="text-lg text-sky-700 mb-8">
             I'm always open to discussing new projects and opportunities.
           </p>
-          <Link href="/contact">
-            <Button>Get In Touch</Button>
+          <Link 
+            href="/contact"
+            className="inline-block px-6 py-3 bg-sky-600 text-white rounded-lg font-medium hover:bg-sky-700 transition-colors shadow-lg hover:shadow-xl"
+          >
+            Get In Touch
           </Link>
         </div>
       </section>

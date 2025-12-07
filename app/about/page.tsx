@@ -20,7 +20,7 @@ export default function AboutPage() {
                 <img src="/avatar.jpg" alt="Your Name" className="w-full h-full object-cover" />
               </div>
               <div>
-                <h2 className="text-2xl font-bold mb-4">Hi, I'm Your Name</h2>
+                <h2 className="text-2xl font-bold mb-4">Hi, I'm Ramanujam Chakravarthula</h2>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
                   I'm a passionate full-stack developer with [X] years of experience building web applications.
                   I love creating elegant solutions to complex problems and am always eager to learn new technologies.

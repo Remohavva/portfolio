@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { SectionTitle } from '@/components/section-title';
 import { Card } from '@/components/ui/card';
 import { Input, Textarea } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
 import { contactFormSchema } from '@/lib/validations';
 
 export default function ContactPage() {
@@ -85,29 +84,33 @@ export default function ContactPage() {
               rows={6}
             />
 
-            <Button type="submit" disabled={status === 'loading'} className="w-full">
+            <button 
+              type="submit" 
+              disabled={status === 'loading'} 
+              className="w-full px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            >
               {status === 'loading' ? 'Sending...' : 'Send Message'}
-            </Button>
+            </button>
 
             {status === 'success' && (
-              <p className="text-green-600 text-center">Message sent successfully!</p>
+              <p className="text-green-400 text-center">Message sent successfully!</p>
             )}
             {status === 'error' && (
-              <p className="text-red-600 text-center">Failed to send message. Please try again.</p>
+              <p className="text-red-400 text-center">Failed to send message. Please try again.</p>
             )}
           </form>
         </Card>
 
         <div className="mt-12 text-center">
-          <h3 className="text-xl font-bold mb-4">Other Ways to Connect</h3>
+          <h3 className="text-xl font-bold mb-4 text-white">Other Ways to Connect</h3>
           <div className="flex justify-center gap-6">
-            <a href="mailto:your.email@example.com" className="text-blue-600 hover:underline">
+            <a href="mailto:your.email@example.com" className="text-blue-400 hover:underline">
               Email
             </a>
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
               GitHub
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
               LinkedIn
             </a>
           </div>

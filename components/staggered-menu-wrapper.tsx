@@ -20,15 +20,15 @@ export function StaggeredMenuWrapper() {
   return (
     <StaggeredMenu
       position="right"
-      colors={['#B19EEF', '#5227FF', '#3b82f6']}
+      colors={['#bae6fd', '#0ea5e9', '#0284c7']}
       items={menuItems}
       socialItems={socialItems}
       displaySocials={true}
       displayItemNumbering={true}
       logoUrl="/logo.svg"
-      menuButtonColor="#fff"
-      openMenuButtonColor="#000"
-      accentColor="#3b82f6"
+      menuButtonColor="#0c4a6e"
+      openMenuButtonColor="#0c4a6e"
+      accentColor="#0ea5e9"
       isFixed={true}
       changeMenuColorOnOpen={true}
       closeOnClickAway={true}
