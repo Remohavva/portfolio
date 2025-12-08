@@ -1,27 +1,22 @@
 import { HeroSection } from '@/components/hero-section';
 import { SectionTitle } from '@/components/section-title';
-import { ProjectCard } from '@/components/project-card';
-import { getFeaturedProjects } from '@/lib/projects';
+import ExpandableCardDemo from '@/components/ui/expandable-card-demo-standard';
 import Link from 'next/link';
 
 export default function HomePage() {
-  const featuredProjects = getFeaturedProjects();
-
   return (
     <div>
       <HeroSection />
       
-      <section className="py-16 px-4">
+      <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <SectionTitle subtitle="Check out some of my recent work">
             Featured Projects
           </SectionTitle>
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            {featuredProjects.map((project) => (
-              <ProjectCard key={project.slug} project={project} />
-            ))}
+          <div className="mb-8">
+            <ExpandableCardDemo />
           </div>
-          <div className="text-center">
+          <div className="text-center mt-12">
             <Link 
               href="/projects"
               className="inline-block px-6 py-3 border-2 border-purple-500 text-purple-400 rounded-lg font-medium hover:bg-purple-950 transition-colors"
