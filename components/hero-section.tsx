@@ -1,14 +1,11 @@
 'use client';
 
-import Link from 'next/link';
 import SplitText from './split-text';
-import { Button } from './ui/button';
-import { ButtonGroup, ButtonGroupSeparator } from './ui/button-group';
 
 export function HeroSection() {
   return (
-    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto text-center">
+    <section className="min-h-screen flex items-center justify-center py-20 sm:py-24 md:py-32 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto text-center w-full">
         <SplitText
           text="Hi, I'm Ramanujam Chakravarthula"
           tag="h1"
@@ -44,22 +41,6 @@ export function HeroSection() {
           to={{ opacity: 1, scale: 1 }}
           threshold={0.2}
         />
-        
-        <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-0 mt-8 px-4">
-          <ButtonGroup>
-            <Link href="/projects">
-              <Button variant="secondary" size="md">
-                View My Work
-              </Button>
-            </Link>
-            <ButtonGroupSeparator />
-            <Link href="/contact">
-              <Button variant="secondary" size="md">
-                Get In Touch
-              </Button>
-            </Link>
-          </ButtonGroup>
-        </div>
       </div>
     </section>
   );
