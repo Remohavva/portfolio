@@ -12,7 +12,7 @@ interface CardProps {
 export function Card({ children, className = '', animate = true }: CardProps) {
   if (!animate) {
     return (
-      <div className={`bg-white/95 backdrop-blur-md border border-sky-200 rounded-xl shadow-xl hover:shadow-2xl transition-shadow p-6 ${className}`}>
+      <div className={`bg-gray-900/90 backdrop-blur-md border border-purple-500/20 rounded-lg sm:rounded-xl shadow-xl shadow-purple-500/10 hover:shadow-2xl hover:shadow-purple-500/20 transition-shadow p-4 sm:p-6 ${className}`}>
         {children}
       </div>
     );
@@ -20,7 +20,7 @@ export function Card({ children, className = '', animate = true }: CardProps) {
 
   return (
     <motion.div 
-      className={`bg-white/95 backdrop-blur-md border border-sky-200 rounded-xl shadow-xl hover:shadow-2xl transition-shadow p-6 ${className}`}
+      className={`bg-gray-900/90 backdrop-blur-md border border-purple-500/20 rounded-lg sm:rounded-xl shadow-xl shadow-purple-500/10 hover:shadow-2xl hover:shadow-purple-500/20 transition-shadow p-4 sm:p-6 ${className}`}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}

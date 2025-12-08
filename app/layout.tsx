@@ -1,8 +1,6 @@
 import type { Metadata } from 'next';
 import { Footer } from '@/components/footer';
-import { StaggeredMenuWrapper } from '@/components/staggered-menu-wrapper';
-
-import LightPillar from '@/components/light-pillar';
+import { FloatingDockNav } from '@/components/floating-dock-nav';
 import '@/styles/globals.css';
 
 export const metadata: Metadata = {
@@ -18,33 +16,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {/* Animated Background */}
-        <div className="fixed inset-0 z-0">
-          <LightPillar
-            topColor="#0ea5e9"
-            bottomColor="#06b6d4"
-            intensity={0.3}
-            rotationSpeed={0.15}
-            interactive={true}
-            glowAmount={0.004}
-            pillarWidth={5.0}
-            pillarHeight={0.4}
-            noiseIntensity={0.2}
-            mixBlendMode="screen"
-            pillarRotation={0}
-          />
-          {/* Overlay to improve readability */}
-          <div className="absolute inset-0 bg-gradient-to-br from-sky-50/95 via-blue-50/90 to-cyan-50/95" />
+        {/* Background with Grid */}
+        <div className="fixed inset-0 z-0 bg-gradient-to-br from-gray-900 via-black to-purple-950">
+          {/* Grid Pattern */}
+          <div className="absolute inset-0 [background-size:40px_40px] [background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]" />
+          {/* Radial gradient overlay */}
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.8)_100%)]" />
         </div>
 
-        
         <div className="relative z-10">
-          <StaggeredMenuWrapper />
-          <main className="min-h-screen pt-24">
+          <main className="min-h-screen pt-4 sm:pt-6 md:pt-8 pb-24 sm:pb-28 md:pb-32">
             {children}
           </main>
           <Footer />
         </div>
+
+        <FloatingDockNav />
       </body>
     </html>
   );

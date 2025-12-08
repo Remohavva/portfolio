@@ -11,7 +11,7 @@ export default function HomePage() {
     <div>
       <HeroSection />
       
-      <section className="py-16 px-4 bg-white/40 backdrop-blur-sm">
+      <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <SectionTitle subtitle="Check out some of my recent work">
             Featured Projects
@@ -24,7 +24,7 @@ export default function HomePage() {
           <div className="text-center">
             <Link 
               href="/projects"
-              className="inline-block px-6 py-3 border-2 border-sky-600 text-sky-700 rounded-lg font-medium hover:bg-sky-50 transition-colors"
+              className="inline-block px-6 py-3 border-2 border-purple-500 text-purple-400 rounded-lg font-medium hover:bg-purple-950 transition-colors"
             >
               View All Projects
             </Link>
@@ -35,12 +35,12 @@ export default function HomePage() {
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <SectionTitle>Let's Work Together</SectionTitle>
-          <p className="text-lg text-sky-700 mb-8">
+          <p className="text-lg text-gray-400 mb-8">
             I'm always open to discussing new projects and opportunities.
           </p>
           <Link 
             href="/contact"
-            className="inline-block px-6 py-3 bg-sky-600 text-white rounded-lg font-medium hover:bg-sky-700 transition-colors shadow-lg hover:shadow-xl"
+            className="inline-block px-6 py-3 bg-purple-600 text-white rounded-lg font-medium hover:bg-purple-700 transition-colors shadow-lg hover:shadow-xl"
           >
             Get In Touch
           </Link>

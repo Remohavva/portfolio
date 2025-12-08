@@ -8,7 +8,7 @@ const ButtonGroup = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      'inline-flex items-center rounded-lg border border-sky-200 bg-white/95 backdrop-blur-md shadow-lg',
+      'inline-flex flex-col sm:flex-row items-stretch sm:items-center rounded-lg border border-purple-500/30 bg-gray-900/80 backdrop-blur-md shadow-lg shadow-purple-500/20 overflow-hidden',
       className
     )}
     {...props}
@@ -22,7 +22,7 @@ const ButtonGroupSeparator = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn('h-8 w-px bg-sky-200', className)}
+    className={cn('h-px sm:h-8 w-full sm:w-px bg-purple-500/30', className)}
     {...props}
   />
 ));
