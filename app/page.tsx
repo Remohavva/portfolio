@@ -1,6 +1,7 @@
 import { HeroSection } from '@/components/hero-section';
 import { SectionTitle } from '@/components/section-title';
 import ExpandableCardDemo from '@/components/ui/expandable-card-demo-standard';
+import TimelineDemo from '@/components/timeline-demo';
 import Link from 'next/link';
 
 export default function HomePage() {
@@ -25,6 +26,10 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
+      </section>
+
+      <section className="py-8 md:py-12">
+        <TimelineDemo />
       </section>
 
       <section className="py-16 px-4">

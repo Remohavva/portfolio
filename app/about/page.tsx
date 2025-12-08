@@ -69,7 +69,7 @@ export default function AboutPage() {
             <div>
               <h3 className="text-xl font-bold mb-2 text-white">Education</h3>
               <p className="text-gray-300">
-                [Your education background]
+                A highly motivated and results-driven Computer Science graduate with a B.Tech. degree (CGPA 8.3/10) from MLR Institute of Technology. Proven proficiency in core computer science fundamentals and strong problem-solving skills developed through rigorous academic projects.
               </p>
             </div>
             <div>
