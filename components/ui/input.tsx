@@ -1,41 +1,25 @@
-import React from 'react';
+import * as React from "react"
 
-interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
-  label?: string;
-  error?: string;
-}
+import { cn } from "@/lib/utils"
 
-export function Input({ label, error, className = '', ...props }: InputProps) {
-  return (
-    <div className="w-full">
-      {label && <label className="block text-sm font-medium mb-2 text-sky-900">{label}</label>}
+export interface InputProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {}
+
+const Input = React.forwardRef<HTMLInputElement, InputProps>(
+  ({ className, type, ...props }, ref) => {
+    return (
       <input
-        className={`w-full px-4 py-2 bg-white border rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 text-sky-900 ${
-          error ? 'border-red-400' : 'border-sky-200'
-        } ${className}`}
+        type={type}
+        className={cn(
+          "flex h-10 w-full rounded-md border border-purple-500/30 bg-gray-900/50 px-3 py-2 text-sm text-white ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
+          className
+        )}
+        ref={ref}
         {...props}
       />
-      {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
-    </div>
-  );
-}
+    )
+  }
+)
+Input.displayName = "Input"
 
-interface TextareaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
-  label?: string;
-  error?: string;
-}
-
-export function Textarea({ label, error, className = '', ...props }: TextareaProps) {
-  return (
-    <div className="w-full">
-      {label && <label className="block text-sm font-medium mb-2 text-sky-900">{label}</label>}
-      <textarea
-        className={`w-full px-4 py-2 bg-white border rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 text-sky-900 ${
-          error ? 'border-red-400' : 'border-sky-200'
-        } ${className}`}
-        {...props}
-      />
-      {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
-    </div>
-  );
-}
+export { Input }
