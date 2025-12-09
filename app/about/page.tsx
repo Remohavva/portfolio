@@ -1,6 +1,7 @@
 import { SectionTitle } from '@/components/section-title';
 import { Card } from '@/components/ui/card';
 import { SkillsMarquee } from '@/components/skills-marquee';
+import { SkillMovingCards } from '@/components/skill-moving-cards';
 
 export default function AboutPage() {
   const skills = [
@@ -41,20 +42,9 @@ export default function AboutPage() {
           </Card>
         </div>
 
-        <SectionTitle subtitle="Technologies I work with">Skills & Technologies</SectionTitle>
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
-          {skills.map((skillGroup) => (
-            <Card key={skillGroup.category}>
-              <h3 className="text-xl font-bold mb-4 text-white">{skillGroup.category}</h3>
-              <ul className="space-y-2">
-                {skillGroup.items.map((skill) => (
-                  <li key={skill} className="text-gray-300">
-                    • {skill}
-                  </li>
-                ))}
-              </ul>
-            </Card>
-          ))}
+        <SectionTitle subtitle="My technology stack">Skills & Technologies</SectionTitle>
+        <div className="mb-12">
+          <SkillMovingCards skills={skills} />
         </div>
 
         <SectionTitle>My Journey</SectionTitle>

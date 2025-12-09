@@ -75,4 +75,18 @@
   .text-responsive-xl {
     @apply text-xl sm:text-2xl md:text-3xl;
   }
+  
+  /* Infinite scroll animation */
+  .animate-scroll {
+    animation: scroll var(--animation-duration, 40s) linear infinite var(--animation-direction, forwards);
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 }
