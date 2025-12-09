@@ -80,14 +80,14 @@ export const InfiniteMovingCards = ({
       <ul
         ref={scrollerRef}
         className={cn(
-          "flex w-max min-w-full shrink-0 flex-nowrap gap-4 py-4",
+          "flex w-max min-w-full shrink-0 flex-nowrap gap-3 sm:gap-4 py-3 sm:py-4",
           start && "animate-scroll",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
         {items.map((item, idx) => (
           <li
-            className="relative w-[350px] max-w-full shrink-0 rounded-2xl border border-purple-500/20 bg-gradient-to-b from-gray-900 to-gray-950 px-8 py-6 md:w-[450px]"
+            className="relative w-[280px] sm:w-[350px] md:w-[450px] max-w-[90vw] shrink-0 rounded-xl sm:rounded-2xl border border-purple-500/20 bg-gradient-to-b from-gray-900 to-gray-950 px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6"
             key={item.name}
           >
             <blockquote>
@@ -95,15 +95,15 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none pointer-events-none absolute -top-0.5 -left-0.5 -z-1 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <span className="relative z-20 text-sm leading-[1.6] font-normal text-gray-100">
+              <span className="relative z-20 text-xs sm:text-sm leading-[1.6] font-normal text-gray-100">
                 {item.quote}
               </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center">
+              <div className="relative z-20 mt-4 sm:mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
-                  <span className="text-sm leading-[1.6] font-normal text-purple-300">
+                  <span className="text-xs sm:text-sm leading-[1.6] font-normal text-purple-300">
                     {item.name}
                   </span>
-                  <span className="text-sm leading-[1.6] font-normal text-gray-400">
+                  <span className="text-xs sm:text-sm leading-[1.6] font-normal text-gray-400">
                     {item.title}
                   </span>
                 </span>

@@ -21,7 +21,7 @@ export function SkillMovingCards({ skills }: SkillMovingCardsProps) {
   }));
 
   return (
-    <div className="rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden py-8">
+    <div className="rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden py-4 sm:py-6 md:py-8 -mx-4 sm:mx-0">
       <InfiniteMovingCards
         items={skillCards}
         direction="right"
