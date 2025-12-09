@@ -65,7 +65,7 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+    <div className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-2xl mx-auto">
         <SectionTitle subtitle="Let's discuss your next project">
           Get In Touch
@@ -73,7 +73,7 @@ export default function ContactPage() {
 
         <Card>
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 sm:space-y-6">
               <FormField
                 control={form.control}
                 name="name"
@@ -147,9 +147,9 @@ export default function ContactPage() {
           </Form>
         </Card>
 
-        <div className="mt-12 text-center">
-          <h3 className="text-xl font-bold mb-4 text-white">Other Ways to Connect</h3>
-          <div className="flex justify-center gap-6 flex-wrap">
+        <div className="mt-8 sm:mt-12 text-center">
+          <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-white">Other Ways to Connect</h3>
+          <div className="flex justify-center gap-4 sm:gap-6 flex-wrap">
             <a href="mailto:your.email@example.com" className="text-purple-400 hover:text-purple-300 transition-colors">
               Email
             </a>

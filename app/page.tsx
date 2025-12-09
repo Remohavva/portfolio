@@ -9,18 +9,18 @@ export default function HomePage() {
     <div>
       <HeroSection />
       
-      <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <SectionTitle subtitle="Check out some of my recent work">
             Featured Projects
           </SectionTitle>
-          <div className="mb-8">
+          <div className="mb-6 sm:mb-8">
             <ExpandableCardDemo />
           </div>
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 sm:mt-12">
             <Link 
               href="/projects"
-              className="inline-block px-6 py-3 border-2 border-purple-500 text-purple-400 rounded-lg font-medium hover:bg-purple-950 transition-colors"
+              className="inline-block px-5 py-2.5 sm:px-6 sm:py-3 border-2 border-purple-500 text-purple-400 rounded-lg font-medium hover:bg-purple-950 transition-colors text-sm sm:text-base"
             >
               View All Projects
             </Link>
@@ -28,19 +28,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-8 md:py-12">
+      <section className="py-6 sm:py-8 md:py-12">
         <TimelineDemo />
       </section>
 
-      <section className="py-16 px-4">
+      <section className="py-12 sm:py-16 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
           <SectionTitle>Let's Work Together</SectionTitle>
-          <p className="text-lg text-gray-400 mb-8">
+          <p className="text-base sm:text-lg text-gray-400 mb-6 sm:mb-8 px-4">
             I'm always open to discussing new projects and opportunities.
           </p>
           <Link 
             href="/contact"
-            className="inline-block px-6 py-3 bg-purple-600 text-white rounded-lg font-medium hover:bg-purple-700 transition-colors shadow-lg hover:shadow-xl"
+            className="inline-block px-5 py-2.5 sm:px-6 sm:py-3 bg-purple-600 text-white rounded-lg font-medium hover:bg-purple-700 transition-colors shadow-lg hover:shadow-xl text-sm sm:text-base"
           >
             Get In Touch
           </Link>

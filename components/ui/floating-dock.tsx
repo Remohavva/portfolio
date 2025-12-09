@@ -25,9 +25,9 @@ export function FloatingDock({ items, className }: FloatingDockProps) {
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
         'fixed bottom-4 sm:bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-50',
-        'flex items-end gap-2 sm:gap-3 md:gap-4 h-14 sm:h-16 px-3 sm:px-4 pb-2 sm:pb-3',
+        'flex items-center justify-center gap-3 sm:gap-3 md:gap-4 h-16 sm:h-16 px-4 sm:px-4',
         'bg-gray-900/80 backdrop-blur-md border border-purple-500/30',
-        'rounded-xl sm:rounded-2xl shadow-xl shadow-purple-500/20',
+        'rounded-2xl shadow-xl shadow-purple-500/20',
         className
       )}
     >
@@ -54,9 +54,9 @@ function DockIcon({ mouseX, title, icon, href }: DockItem & { mouseX: any }) {
       <motion.div
         ref={ref}
         style={{ width }}
-        className="aspect-square w-9 sm:w-10 rounded-full bg-gray-800 flex items-center justify-center text-purple-400 hover:text-purple-300 transition-colors cursor-pointer relative group"
+        className="aspect-square w-10 sm:w-10 rounded-full bg-gray-800 flex items-center justify-center text-purple-400 hover:text-purple-300 transition-colors cursor-pointer relative group"
       >
-        <div className="w-5 h-5 sm:w-6 sm:h-6">
+        <div className="w-5 h-5 sm:w-6 sm:h-6 flex items-center justify-center">
           {icon}
         </div>
         <span className="absolute -top-8 sm:-top-10 left-1/2 -translate-x-1/2 px-2 py-1 bg-gray-900 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">

@@ -25,7 +25,7 @@ export default function RootLayout({
         </div>
 
         <div className="relative z-10">
-          <main className="min-h-screen pt-4 sm:pt-6 md:pt-8 pb-24 sm:pb-28 md:pb-32">
+          <main className="min-h-screen pt-2 sm:pt-4 md:pt-6 pb-20 sm:pb-24 md:pb-28">
             {children}
           </main>
           <Footer />
