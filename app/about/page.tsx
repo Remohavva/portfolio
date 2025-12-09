@@ -30,11 +30,11 @@ export default function AboutPage() {
               <div className="flex-1">
                 <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white">Hi, I'm Ramanujam Chakravarthula</h2>
                 <p className="text-gray-300 mb-4 text-base md:text-lg leading-relaxed">
-                  I'm a passionate full-stack developer with [X] years of experience building web applications.
-                  I love creating elegant solutions to complex problems and am always eager to learn new technologies.
+                  I'm a passionate full-stack developer with 2 years of experience building web applications.
+                  I just have to develop to have fun if i find ideas to be fun i go ahead and develop them.
                 </p>
                 <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-                  When I'm not coding, you can find me [your hobbies/interests].
+                  When I'm not coding, you can find me playing Video Games , Binge Watching or getting lost.
                 </p>
               </div>
             </div>
@@ -61,10 +61,7 @@ export default function AboutPage() {
         <Card>
           <div className="space-y-6">
             <div>
-              <h3 className="text-xl font-bold mb-2 text-white">Current Position</h3>
-              <p className="text-gray-300">
-                [Your current role and company]
-              </p>
+            
             </div>
             <div>
               <h3 className="text-xl font-bold mb-2 text-white">Education</h3>
@@ -73,10 +70,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-bold mb-2 text-white">Experience</h3>
-              <p className="text-gray-300">
-                [Brief overview of your professional experience]
-              </p>
+              
             </div>
           </div>
         </Card>
