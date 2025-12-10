@@ -27,7 +27,7 @@ export function Footer() {
                 LinkedIn
               </a>
               <a
-                href="https://twitter.com/yourusername"
+                href="https://twitter.com/GshsRam"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm sm:text-base text-purple-400 hover:text-purple-300 transition-colors font-medium"
