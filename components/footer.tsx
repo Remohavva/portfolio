@@ -7,11 +7,11 @@ export function Footer() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 sm:gap-6">
             <p className="text-xs sm:text-sm text-gray-400 text-center md:text-left">
-              © {new Date().getFullYear()} Your Name. All rights reserved.
+              © {new Date().getFullYear()} Ramanujam Chakravarthula. All rights reserved , Aren't They?
             </p>
             <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/Remohavva"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm sm:text-base text-purple-400 hover:text-purple-300 transition-colors font-medium"
@@ -19,7 +19,7 @@ export function Footer() {
                 GitHub
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://linkedin.com/in/ramanuj-am"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm sm:text-base text-purple-400 hover:text-purple-300 transition-colors font-medium"
