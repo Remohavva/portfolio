@@ -5,9 +5,10 @@ import { SkillMovingCards } from '@/components/skill-moving-cards';
 
 export default function AboutPage() {
   const skills = [
-    { category: 'Frontend', items: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'] },
-    { category: 'Backend', items: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB'] },
+    { category: 'Frontend', items: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS',''] },
+    { category: 'Backend', items: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB','Java'] },
     { category: 'Tools', items: ['Git', 'Docker', 'AWS', 'Vercel'] },
+    { category: 'Others', items: ['Python', 'PineCone', 'RAG', 'Data Science'] },
   ];
 
   return (
