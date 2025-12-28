@@ -1,0 +1,35 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="url(#gradient)"/>
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Music Note Icon -->
+  <g transform="translate(350, 200)">
+    <circle cx="50" cy="150" r="25" fill="white" opacity="0.9"/>
+    <rect x="70" y="50" width="6" height="125" fill="white" opacity="0.9"/>
+    <circle cx="73" cy="50" r="20" fill="white" opacity="0.9"/>
+  </g>
+  
+  <!-- Project Title -->
+  <text x="400" y="350" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="48" font-weight="bold">iCSUM</text>
+  <text x="400" y="390" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="20" opacity="0.8">Music Review Platform</text>
+  
+  <!-- Tech Stack -->
+  <g transform="translate(250, 450)">
+    <rect x="0" y="0" width="80" height="30" rx="15" fill="white" opacity="0.2"/>
+    <text x="40" y="20" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">React.js</text>
+    
+    <rect x="90" y="0" width="80" height="30" rx="15" fill="white" opacity="0.2"/>
+    <text x="130" y="20" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">MongoDB</text>
+    
+    <rect x="180" y="0" width="80" height="30" rx="15" fill="white" opacity="0.2"/>
+    <text x="220" y="20" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">Express.js</text>
+    
+    <rect x="270" y="0" width="80" height="30" rx="15" fill="white" opacity="0.2"/>
+    <text x="310" y="20" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">Tailwind</text>
+  </g>
+</svg>
