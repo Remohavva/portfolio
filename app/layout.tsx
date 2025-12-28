@@ -4,8 +4,45 @@ import { FloatingDockNav } from '@/components/floating-dock-nav';
 import '@/styles/globals.css';
 
 export const metadata: Metadata = {
-  title: 'Your Name - Portfolio',
-  description: 'Full Stack Developer Portfolio',
+  title: {
+    default: 'Ramanujam Chakravarthula - Full Stack Developer',
+    template: '%s | Ramanujam Chakravarthula'
+  },
+  description: 'Full Stack Developer specializing in React, Next.js, and modern web technologies. Building amazing digital experiences.',
+  keywords: ['Full Stack Developer', 'React', 'Next.js', 'TypeScript', 'Web Development', 'Portfolio'],
+  authors: [{ name: 'Ramanujam Chakravarthula' }],
+  creator: 'Ramanujam Chakravarthula',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://your-domain.com',
+    title: 'Ramanujam Chakravarthula - Full Stack Developer',
+    description: 'Full Stack Developer specializing in React, Next.js, and modern web technologies.',
+    siteName: 'Ramanujam Chakravarthula Portfolio',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ramanujam Chakravarthula - Full Stack Developer',
+    description: 'Full Stack Developer specializing in React, Next.js, and modern web technologies.',
+    creator: '@yourusername',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon-16x16.png',
+    apple: '/apple-touch-icon.png',
+  },
+  manifest: '/site.webmanifest',
 };
 
 export default function RootLayout({
