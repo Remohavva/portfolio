@@ -15,14 +15,14 @@ export const projects: Project[] = [
   },
   {
     slug: 'ecommerce-platform',
-    title: 'E-Commerce Platform',
-    description: 'A full-stack e-commerce solution with payment integration',
-    longDescription: 'Built a complete e-commerce platform with user authentication, product management, shopping cart, and Stripe payment integration. Features include admin dashboard, inventory management, order tracking, and responsive design.',
-    techStack: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'Stripe'],
+    title: 'Engg. Buddy',
+    description: 'A Data Science Based Chatbot Harnessing Supervised Learning and Natural Language Processing for finding most viable college for Students on basis of their JEE/Entrance Rank',
+    longDescription: 'This project presents a Data Science–driven intelligent chatbot designed to assist students in identifying the most suitable and viable colleges based on their JEE or other entrance examination ranks. By combining supervised machine learning techniques with advanced Natural Language Processing (NLP), the system delivers accurate, personalized, and conversational guidance for higher-education decision-making..',
+    techStack: [ 'NLP', 'sklearn', 'matplotlib','seaborn','python','Streamlit'],
     image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80',
     links: {
-      github: 'https://github.com/yourusername/ecommerce',
-      live: 'https://ecommerce-demo.vercel.app'
+      github: 'https://github.com/Remohavva/IIT-Seat-Allocation-Analysis',
+
     },
     featured: false
   },
