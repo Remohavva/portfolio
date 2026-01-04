@@ -28,8 +28,8 @@ export const projects: Project[] = [
   },
   {
     slug: 'task-manager',
-    title: 'Task Management App',
-    description: 'Collaborative task manager with real-time updates',
+    title: 'Pillion',
+    description: 'Work in Progress',
     longDescription: 'A real-time task management application with drag-and-drop functionality, team collaboration features, and notifications. Built with modern React patterns and real-time synchronization.',
     techStack: ['React', 'Node.js', 'Socket.io', 'MongoDB'],
     image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&q=80',
